@@ -44,7 +44,7 @@ There is an active project to make a version of the algorithm available in R. St
 
 ## Reference
 
-1. 
+R. Calen Walshe, Jared Abrams, Wilson Geisler; A theory of visual search for targets added to natural backgrounds. Journal of Vision 2020;20(11):404. doi: https://doi.org/10.1167/jov.20.11.404.
 
 ### License
 
