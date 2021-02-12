@@ -53,5 +53,5 @@ FI is released under the terms of the [GNU General Public License v3.0](https://
 ### Appreciation
 
 Thanks to the Giesler Lab for many various contributions.
-Thanks to the [BADS](https://github.com/acerbi/bads). project for this readme template (and a kickass project).
+Thanks to the [BADS](https://github.com/lacerbi/bads) project for this readme template (and a kickass project).
 
