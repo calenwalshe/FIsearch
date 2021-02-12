@@ -1,8 +1,6 @@
 # Core visual search algorithm
 ```Matlab
-fileID = fopen('./priorh.bin');
-priorh = fread(fileID, [2400, 2400], 'double');
-fileID = fopen('./dpmap.bin');
-dpmap = fread(fileID, [2400, 2400], 'double');
-fileID = fopen('./rtmp.bin');
+priorh = fread('./priorh.bin', [2400, 2400], 'double');
+dpmap  = fread('./dpmap.bin', [2400, 2400], 'double');
+rtmp   = fread('./rtmp.bin', [135, 145], 'double');
 ```
