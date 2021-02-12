@@ -12,7 +12,7 @@ Given a d' map and a prior probability distribution the FI search is approximate
 
 ## Installation
 
-[**Easy Install: Get a zip file**](https://github.com/calenwalshe/FIsearch/archive/master.zip).
+[**Easy Install: Get a zip file**](https://github.com/calenwalshe/FIsearch/blob/main/archive/master.zip).
 - Unpack and navigate to directory, then run `test_install`
 
 ## Quick start
