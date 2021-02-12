@@ -1,1 +1,1 @@
-# visual_search
+# Core visual search algorithm
