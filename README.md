@@ -48,4 +48,10 @@ There is an active project to make a version of the algorithm available in R. St
 
 ### License
 
-BADS is released under the terms of the [GNU General Public License v3.0](https://github.com/calenwalshe/FIsearch/blob/master/LICENSE.txt).
+FI is released under the terms of the [GNU General Public License v3.0](https://github.com/calenwalshe/FIsearch/blob/master/LICENSE.txt).
+
+### Appreciation
+
+Thanks to the Giesler Lab for many various contributions.
+Thanks to the [BADS](https://github.com/acerbi/bads). project for this readme template (and a kickass project).
+
