@@ -38,9 +38,9 @@ If you have trouble doing something with BADS:
 - Check out the FAQ on the [Foveated Ideal wiki](https://github.com/calenwalshe/FIsearch/wiki);
 - Contact me at <calen.walshe@utexas.edu>, putting 'Foveated Ideal' in the subject of the email.
 
-## BADS for other programming languages
+## FIsearch for other programming languages
 
-There is an active project to make a version of the algorithm available in R. Stay tuned. 
+There is an active project to make a version of the algorithm available in R and Python. Stay tuned. 
 
 ## Reference
 
