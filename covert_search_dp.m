@@ -5,6 +5,7 @@ function results = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu) %co
 %note that (i,j) = (y,x)
 % note:  xcorr2 = conv2(a, rot90(conj(b),2));  can add 'same' to this
 %coder.gpu.kernelfun;
+
 tic;
 rng(seed)
 %% Setup some generic parameters for size
@@ -30,6 +31,7 @@ if bGpu
     dpmap                  = gpuArray(dpmap);
     half_dpmap_with_eprior = gpuArray(half_dpmap_with_eprior);
 end
+
 %% Run simulation loop
 for k = 1:trials            % background number
     if bGpu
@@ -62,8 +64,9 @@ for k = 1:trials            % background number
     % record data
     dataTotal(k, :) = [yt, xt, tpa, Y, X, slpmx];
 end
-data = dataTotal;
+
 %% Structured Data Storage
+data     = dataTotal;
 stimY    = data(:, 1);
 stimX    = data(:, 2);
 tPresent = data(:, 3);
