@@ -1,9 +1,8 @@
-function results = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu) %codegen
+function results = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu)
 % COVERT_SEARCH_DP runs the search model with specified parameters and
 % number of trials.
 % note that (i,j) = (y,x)
 % note:  xcorr2 = conv2(a, rot90(conj(b),2));  can add 'same' to this
-% coder.gpu.kernelfun;
 
 tic;
 rng(seed)
