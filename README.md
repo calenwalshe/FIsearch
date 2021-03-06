@@ -8,7 +8,7 @@
 
 The Foveated Ideal Covert Searcher is a new method for searching for images added to scenes. Covert search performance is limited by both the prior probability over potential target locations (the position uncertainty), and the detectability of the target at all the potential target locations (the d' map). The FI searcher takes both of these into account to perform optimal visual search for a target. It is called a covert search because the position of the target relative to the foveated map is fixed.
 
-Given a d' map and a prior probability distribution the FI search is approximately the optimal way to search for targets in large set of image backgrounds.
+Given a d' map and a prior probability distribution the FI search is approximately the optimal way to search for targets in most classes of natural image backgrounds.
 
 ## Installation
 
@@ -27,20 +27,16 @@ rtmp     = fread('./rtmp.bin', [135, 145], 'double');
 results  = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu);
 ```
 
-## How does it work
-
-More to come. Stay tuned.
-
-## Troubleshooting
+## Help
 
 If you have trouble doing something with BADS:
 
 - Check out the FAQ on the [Foveated Ideal wiki](https://github.com/calenwalshe/FIsearch/wiki);
 - Contact me at <calen.walshe@utexas.edu>, putting 'Foveated Ideal' in the subject of the email.
 
-## FIsearch for other programming languages
+## Ports to other languages
 
-There is an active project to make a version of the algorithm available in R and Python. Stay tuned. 
+There is an active project to make a version of the algorithm available in R and Python. Follow that project [here](https://github.com/calenwalshe/visual_search_fast)
 
 ## Reference
 
@@ -50,8 +46,7 @@ R. Calen Walshe, Jared Abrams, Wilson Geisler; A theory of visual search for tar
 
 FI is released under the terms of the [GNU General Public License v3.0](https://github.com/calenwalshe/FIsearch/blob/master/LICENSE.txt).
 
-### Appreciation
+### Thanks and credits.
 
-Thanks to the Giesler Lab for many various contributions.
-Thanks to the [BADS](https://github.com/lacerbi/bads) project for this readme template (and a kickass project).
+Thanks to the Giesler Lab for many various contributions. 
 
