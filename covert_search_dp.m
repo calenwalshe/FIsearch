@@ -1,8 +1,7 @@
 function results = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu)
-% COVERT_SEARCH_DP runs the search model with specified parameters and
-% number of trials.
-% note that (i,j) = (y,x)
-% note:  xcorr2 = conv2(a, rot90(conj(b),2));  can add 'same' to this
+% COVERT_SEARCH_DP Run the search algorithm with a few parameters as options.
+% Most of the setup is precomputed in dpmap, priorh, and rtmp. See the paper (Walshe & Geisler, 2021)
+% or other repos on github for details.
 
 tic;
 rng(seed)
@@ -10,7 +9,6 @@ rng(seed)
 sz      = 600; % in releases this can be variable size. 
 rt      = floor(size(rtmp, 1)/2); 
 
-%%
 lnepriorh       = log(priorh); % Create effective prior
 half_dpmap      = 0.5 .* dpmap.^2;
 half_dpmap_with_eprior = half_dpmap - lnepriorh;
