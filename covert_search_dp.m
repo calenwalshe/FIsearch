@@ -57,7 +57,7 @@ for k = 1:trials            % background number
     % location of max normalized response, and max normalized response
     norm_resp = re .* dpmap - half_dpmap_with_eprior;    
     slpmx     = max(norm_resp(:));
-    [Y, X]    = find(norm_resp == max(norm_resp(:)), 1); % since we use the max rule, find the max.
+    [Y, X]    = find(norm_resp == max(norm_resp(:)), 1); % to use the max rule take the.... max. 
 
     % record data
     dataTotal(k, :) = [yt, xt, tpa, Y, X, slpmx];
