@@ -8,7 +8,7 @@
 
 The Foveated Ideal Covert Searcher is a new method for searching for images added to scenes. Covert search performance is limited by both the prior probability over potential target locations (the position uncertainty), and the detectability of the target at all the potential target locations (the d' map). The FI searcher takes both of these into account to perform optimal visual search for a target. It is called a covert search because the position of the target relative to the foveated map is fixed.
 
-Given a d' map and a prior probability distribution the FI search is approximately the optimal way to search for targets in most classes of natural image backgrounds.
+Given a d' map and a prior probability distribution the FI search is the optimal way to covertly search for embedded in noise.
 
 ## Installation
 
