@@ -21,9 +21,9 @@ Given a d' map and a prior probability distribution the FI search is the optimal
 trials   = 200; % model converges with more trials
 seed     = 1; % same seed same results
 bGpu     = 0; % use a gpu
-priorh   = fread('./priorh.bin', [2400, 2400], 'double');
-dpmap    = fread('./dpmap.bin', [2400, 2400], 'double');
-rtmp     = fread('./rtmp.bin', [135, 145], 'double');
+priorh   = fread(fopen('./priorh.bin'), [2400, 2400], 'double');
+dpmap    = fread(fopen('./dpmap.bin'), [2400, 2400], 'double');
+rtmp     = fread(fopen('./rtmp.bin'), [135, 145], 'double');
 results  = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu);
 ```
 
