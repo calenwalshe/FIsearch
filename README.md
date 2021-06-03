@@ -21,7 +21,7 @@ seed     = 1; % same seed same results
 bGpu     = 0; % use a gpu
 priorh   = fread(fopen('./priorh.bin'), [2400, 2400], 'double');
 dpmap    = fread(fopen('./dpmap.bin'), [2400, 2400], 'double');
-rtmp     = fread(fopen('./rtmp.bin'), [135, 145], 'double');
+rtmp     = fread(fopen('./rtmp.bin'), [135, 135], 'double');
 results  = covert_search_dp(trials, dpmap, priorh, rtmp, seed, bGpu);
 ```
 
